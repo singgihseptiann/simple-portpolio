@@ -7,7 +7,7 @@ export default function Theme() {
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-full border p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+      className="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
     >
       {isDark ? <Sun className="text-yellow-400" /> : <SunMoon />}
     </button>
