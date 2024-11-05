@@ -4,7 +4,7 @@ import Theme from "./theme";
 export default function Navbar() {
   return (
     <nav
-      className="container sticky top-0 z-50 mx-auto max-w-4xl bg-white p-2 dark:bg-zinc-900"
+      className="container sticky top-0 z-50 mx-auto max-w-6xl bg-white p-2 dark:bg-zinc-900"
       aria-label="Main Navigation"
     >
       <div className="flex items-center justify-between gap-2 rounded-lg p-2 text-lg">
