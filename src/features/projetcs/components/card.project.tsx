@@ -25,9 +25,9 @@ const CardProject: React.FC<CardProjectProps> = ({
   githubUrl,
 }) => {
   return (
-    <div className="flex h-full flex-col rounded border border-zinc-100 bg-white transition-shadow duration-300 ease-in-out hover:shadow-lg dark:border-gray-800 dark:bg-zinc-900">
+    <div className="flex h-full flex-col rounded-lg border bg-white transition-all duration-500 ease-out hover:bg-gray-100 hover:shadow-lg dark:border-gray-800 dark:bg-transparent dark:hover:bg-gray-900">
       {/* Header section with fixed height */}
-      <div className="flex h-32 flex-col p-4">
+      <div className="flex h-44 flex-col p-4">
         <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
           {title}
         </h2>
@@ -75,7 +75,7 @@ const CardProject: React.FC<CardProjectProps> = ({
               rel="noopener noreferrer"
               className="flex items-center text-blue-500 transition-colors hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
             >
-              <span className="mr-1">Portfolio</span>
+              <span className="mr-1">Site</span>
               <GoArrowUpRight className="h-4 w-4" />
             </a>
           )}

@@ -6,7 +6,7 @@ const ExperienceSection = () => {
     {
       company: "Aneka Dasuib Jaya",
       title: "Frontend Developer",
-      date: "2023 - Present",
+      date: "Dec 2023 - Present",
       icon: (
         <BriefcaseBusiness className="h-6 w-6 text-gray-500 dark:text-white" />
       ),
