@@ -1,31 +1,28 @@
 import TitleSection from "@/components/title.section";
+import gintoki from "@/assets/about/gintoki.png";
 
 const About: React.FC = () => {
   return (
     <div className="flex flex-col-reverse items-start md:flex-row md:items-center">
       <div className="flex-1 md:pr-4">
         <TitleSection title="About" />
-        <h1 className="text-2xl font-bold text-gray-800 md:text-4xl dark:text-white">
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
           Singgih Septian Nugraha
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, debitis
-          praesentium est totam accusamus eos, id magnam adipisci ipsa officia
-          deleniti quidem. Quidem temporibus accusamus hic. Porro deserunt cum
-          doloremque natus id similique blanditiis, eveniet rerum assumenda!
-          Vitae odio corrupti harum eius sunt totam ut incidunt accusantium
-          autem! Temporibus excepturi recusandae at iste ab. Vero praesentium
-          vitae sunt ea repudiandae consectetur error enim in ratione, mollitia
-          non autem odio voluptatibus perspiciatis laboriosam? Omnis veritatis,
-          dolore reiciendis eos delectus temporibus velit quis iste dicta
-          eligendi nobis incidunt tempora quam cum minima maxime nihil nam.
-          Quis, harum saepe veniam officiis culpa aperiam.
+          Hallo guys! 👋🏽 I'm a frontend developer. I started learning web
+          development in 2023 while working on my final thesis for college. It
+          was a challenging yet exciting journey, where I discovered my passion
+          for creating interactive and user-friendly web applications. After
+          that, I decided to join the frontend engineer bootcamp at Binar
+          Academy. Through countless hours of coding and problem-solving, I have
+          honed my skills and continue to grow in this dynamic field.
         </p>
       </div>
       <img
-        src="https://via.placeholder.com/150"
+        src={gintoki}
         alt="Descriptive Alt Text"
-        className="mb-4 h-auto w-full rounded-md md:mb-0 md:w-1/4"
+        className="mb-4 h-auto w-full md:mb-0 md:w-1/3"
       />
     </div>
   );
