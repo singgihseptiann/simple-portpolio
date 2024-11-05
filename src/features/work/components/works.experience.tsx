@@ -17,7 +17,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ experiences }) => {
   return (
     <section className="mt-10">
       <TitleSection title="Work Experience" />
-      <div className="rounded border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <div className="rounded border border-zinc-100 p-6 dark:border-gray-800">
         {experiences.map((experience, index) => (
           <div key={index} className="mb-4 flex items-center">
             <div className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-200 p-2 dark:border-zinc-700">

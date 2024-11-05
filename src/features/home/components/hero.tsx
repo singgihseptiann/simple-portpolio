@@ -20,7 +20,7 @@ const SocialIcon: React.FC<{ href: string; Icon: React.ElementType }> = ({
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="flex h-10 w-10 items-center justify-center text-gray-500 transition-colors duration-200 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white"
+    className="flex h-10 w-10 items-center justify-center text-gray-500 transition-colors duration-200 hover:text-gray-800 dark:text-gray-400 dark:hover:text-cyan-600"
   >
     <Icon />
   </a>
