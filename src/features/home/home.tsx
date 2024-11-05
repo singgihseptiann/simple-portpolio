@@ -10,8 +10,8 @@ export default function Home() {
         jobTitle="Frontend Developer"
         subtitle="Frontend developer, lifelong learner, and an 8-5 tech worker in the office. When I'm away from the keyboard, I'm diving into anime worlds!"
         socialLinks={{
-          github: "https://github.com/yourusername",
-          linkedin: "https://linkedin.com/in/yourusername",
+          github: "https://github.com/singgihseptiann",
+          linkedin: "https://www.linkedin.com/in/singgihseptian/",
         }}
       />
 
