@@ -1,5 +1,6 @@
 import TitleSection from "@/components/title.section";
 import gintoki from "@/assets/about/gintoki.png";
+import { SiReaddotcv } from "react-icons/si";
 
 const About: React.FC = () => {
   return (
@@ -11,13 +12,24 @@ const About: React.FC = () => {
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400">
           Hallo guys! 👋🏽 I'm a frontend developer. I started learning web
-          development in 2023 while working on my final thesis for college. It
-          was a challenging yet exciting journey, where I discovered my passion
-          for creating interactive and user-friendly web applications. After
-          that, I decided to join the frontend engineer bootcamp at Binar
+          development in May 2023 while working on my final thesis for college.
+          It was a challenging yet exciting journey, where I discovered my
+          passion for creating interactive and user-friendly web applications.
+          After that, I decided to join the frontend engineer bootcamp at Binar
           Academy. Through countless hours of coding and problem-solving, I have
           honed my skills and continue to grow in this dynamic field.
         </p>
+        <a
+          className="mt-2 inline-flex text-gray-600 underline hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+          href="https://drive.google.com/drive/folders/1G0fH8sTx2dBFTaYXxSrEg4RHp-R30hpv?hl=id&q=sharedwith:public%20parent:1G0fH8sTx2dBFTaYXxSrEg4RHp-R30hpv"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="flex items-center gap-2">
+            <SiReaddotcv />
+            Resume
+          </div>
+        </a>
       </div>
       <img
         src={gintoki}
