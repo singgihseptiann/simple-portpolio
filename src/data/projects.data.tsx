@@ -79,12 +79,13 @@ export const projects: Project[] = [
     img: SeekYourJob,
     techStack: techStack3,
     portfolioUrl: "https://seekyourjob.my.id/",
-    githubUrl: "https://github.com/anotherrepo",
+    githubUrl:
+      "https://github.com/singgihseptiann/final-assignment-devscale-mern/tree/main",
   },
   {
     title: "Binar Car Rental",
     description:
-      "A brief description of my awesome project, explaining its purpose and features.",
+      "Binar Car Rental is a project I developed during my Frontend Engineer bootcamp at Binar Academy. This project showcases key features and functionalities essential for a car rental service, including a user-friendly interface and streamlined rental processes.",
     img: Bcr,
     techStack: techStack1,
     portfolioUrl: "https://kelompok1-platinum-customer-page.vercel.app/login",
@@ -94,19 +95,11 @@ export const projects: Project[] = [
 
   {
     title: "Ssayomart",
-    description: "Details about yet another project with a different approach.",
+    description:
+      "Ssayomart is an e-commerce project, which was my first professional project as a Frontend Developer. I worked on an existing project, focusing on improving its responsiveness, particularly ensuring a seamless mobile experience for users. If you're viewing it on a large screen and want to switch to mobile view, please refresh the browser for a better experience.",
     img: Ssayomart,
     techStack: techStack2,
     portfolioUrl: "https://apps.ssayomart.com/",
-    githubUrl: "https://github.com/yetanotherrepo",
-  },
-  {
-    title: "Yet Another Project",
-    description: "Details about yet another project with a different approach.",
-    img: "https://via.placeholder.com/300x200",
-    techStack: techStack2,
-    portfolioUrl: "https://apps.ssayomart.com/",
-    githubUrl: "https://github.com/yetanotherrepo",
   },
 
   // Add more projects as needed

@@ -27,7 +27,7 @@ const CardProject: React.FC<CardProjectProps> = ({
   return (
     <div className="flex h-full flex-col rounded-lg border bg-white transition-all duration-500 ease-out hover:bg-gray-100 hover:shadow-lg dark:border-gray-800 dark:bg-transparent dark:hover:bg-gray-900">
       {/* Header section with fixed height */}
-      <div className="flex h-44 flex-col p-4">
+      <div className="flex h-64 flex-col p-4 md:h-72">
         <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
           {title}
         </h2>

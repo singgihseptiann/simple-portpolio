@@ -16,14 +16,14 @@ const EducationAndBootcamps: React.FC = () => {
       name: "Frontend Engineer (Binar Academy)",
       startDate: "July 2023",
       endDate: "November 2023",
-      learnedSkills: ["React", "JavaScript", "Bootstrap", "Redux"],
+      learnedSkills: ["React", "JavaScript", "Bootstrap", "Redux", "Github"],
       certificateLink:
-        "https://drive.google.com/drive/folders/1THa3uvSDhH6k5kbtizaIvQcyxivIBMP9?hl=id&q=sharedwith:public%20parent:1THa3uvSDhH6k5kbtizaIvQcyxivIBMP9",
+        "https://drive.google.com/drive/folders/190OchgJiKdHdq-3hjEM5u-SgXvEvgy8u?hl=id",
     },
     {
       name: "Fullstack MERN Bootcamp (Devscale.id) ",
-      startDate: "July 2023",
-      endDate: "December 2023",
+      startDate: "July 2024",
+      endDate: "October 2024",
       learnedSkills: [
         "TypeScript",
         "React",
@@ -34,7 +34,7 @@ const EducationAndBootcamps: React.FC = () => {
         "Docker",
       ],
       certificateLink:
-        "https://drive.google.com/file/d/your-certificate-link-2/view",
+        "https://drive.google.com/drive/folders/1aBfmXrGo6LbBQnhwjXgH9zoRzOGs5V1Y?hl=id",
     },
   ];
 
