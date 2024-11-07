@@ -21,7 +21,7 @@ const About: React.FC = () => {
         </p>
         <a
           className="mt-2 inline-flex text-gray-600 underline hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
-          href="https://drive.google.com/drive/folders/1G0fH8sTx2dBFTaYXxSrEg4RHp-R30hpv?hl=id&q=sharedwith:public%20parent:1G0fH8sTx2dBFTaYXxSrEg4RHp-R30hpv"
+          href="https://drive.google.com/drive/folders/1G0fH8sTx2dBFTaYXxSrEg4RHp-R30hpv?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
