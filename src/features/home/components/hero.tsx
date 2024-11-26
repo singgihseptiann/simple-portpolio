@@ -1,3 +1,4 @@
+import ContactButton from "@/components/contact.button";
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
@@ -21,7 +22,7 @@ const SocialIcon: React.FC<{ href: string; Icon: React.ElementType }> = ({
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center gap-2 text-gray-500 transition-colors duration-200 hover:text-gray-800 dark:text-gray-400 dark:hover:text-blue-500"
+    className="flex items-center justify-center gap-2 text-gray-700 transition-colors duration-200 hover:text-gray-300 dark:text-gray-300 dark:hover:text-blue-500"
   >
     <Icon className="ml-2 text-3xl" />
   </a>
@@ -51,6 +52,11 @@ const Hero: React.FC<HeroProps> = ({
       <p className="dark:text-zinc-390 mt-6 font-mono text-xl text-zinc-600">
         {subtitle}
       </p>
+      <ContactButton
+        mailTo="mailto:septiansinggih93@gmail.com"
+        name="septiansinggih93@gmail.com"
+      />
+
       <div className="mt-6 flex">
         {socialLinks.github && (
           <SocialIcon href={socialLinks.github} Icon={FaSquareGithub} />

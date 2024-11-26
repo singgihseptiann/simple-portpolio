@@ -1,13 +1,13 @@
 import TitleSection from "@/components/title.section";
-import gintoki from "@/assets/about/gintoki.png";
+import gintoki from "@/assets/about/me1.jpg";
 import { SiReaddotcv } from "react-icons/si";
 
 const About: React.FC = () => {
   return (
-    <div className="flex flex-col-reverse items-start md:flex-row md:items-center">
+    <div className="flex flex-col-reverse items-start md:items-center lg:flex-row">
       <div className="flex-1 md:pr-4">
         <TitleSection title="About" />
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-white md:text-6xl">
           Singgih Septian Nugraha
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400">
@@ -34,7 +34,7 @@ const About: React.FC = () => {
       <img
         src={gintoki}
         alt="Descriptive Alt Text"
-        className="mb-4 h-auto w-full md:mb-0 md:w-1/3"
+        className="mb-4 h-auto w-full rotate-3 rounded-lg shadow shadow-neutral-400 md:mb-0 md:w-1/3"
       />
     </div>
   );
