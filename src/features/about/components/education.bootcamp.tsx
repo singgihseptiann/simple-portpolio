@@ -18,7 +18,7 @@ const EducationAndBootcamps: React.FC = () => {
       endDate: "November 2023",
       learnedSkills: ["React", "JavaScript", "Bootstrap", "Redux", "Github"],
       certificateLink:
-        "https://drive.google.com/drive/folders/190OchgJiKdHdq-3hjEM5u-SgXvEvgy8u?hl=id",
+        "https://drive.google.com/drive/folders/190OchgJiKdHdq-3hjEM5u-SgXvEvgy8u?usp=sharing",
     },
     {
       name: "Fullstack MERN Bootcamp (Devscale.id) ",
@@ -34,7 +34,7 @@ const EducationAndBootcamps: React.FC = () => {
         "Docker",
       ],
       certificateLink:
-        "https://drive.google.com/drive/folders/1aBfmXrGo6LbBQnhwjXgH9zoRzOGs5V1Y?hl=id",
+        "https://drive.google.com/drive/folders/1aBfmXrGo6LbBQnhwjXgH9zoRzOGs5V1Y?usp=sharing",
     },
   ];
 
