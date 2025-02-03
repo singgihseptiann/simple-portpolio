@@ -18,11 +18,12 @@ const ProjectsPage: React.FC = () => {
           Showcase of my works on web development.
         </p>
       )}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4">
         {(isProjectsRoute ? projects : projects.slice(0, 3)).map(
           (project, index) => (
             <CardProject
               key={index}
+              id={project.id}
               title={project.title}
               description={project.description}
               img={project.img}

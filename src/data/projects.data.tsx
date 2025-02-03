@@ -22,6 +22,7 @@ interface TechStackIcon {
 
 // Define the type for the project
 interface Project {
+  id: string;
   title: string;
   description: string;
   img: string;
@@ -73,9 +74,10 @@ const techStack3: TechStackIcon[] = [
 // Array of projects
 export const projects: Project[] = [
   {
+    id: "seek-your-job",
     title: "Seek Your Job",
     description:
-      "Job website with integrated OpenAI for matching resumes with job vacancies. This website is a final assignment from my Fullstack MERN Bootcamp (DevScale), developed by my team.",
+      "Job website with OpenAI integration for matching resumes and vacancies.",
     img: SeekYourJob,
     techStack: techStack3,
     portfolioUrl: "https://seekyourjob.my.id/",
@@ -83,24 +85,23 @@ export const projects: Project[] = [
       "https://github.com/singgihseptiann/final-assignment-devscale-mern/tree/main",
   },
   {
+    id: "binar-car-rental",
     title: "Binar Car Rental",
     description:
-      "Binar Car Rental is a project I developed during my Frontend Engineer bootcamp at Binar Academy. This project showcases key features and functionalities essential for a car rental service, including a user-friendly interface and streamlined rental processes.",
+      "Car rental service project with a focus on user-friendly UI and smooth processes.",
     img: Bcr,
     techStack: techStack1,
     portfolioUrl: "https://kelompok1-platinum-customer-page.vercel.app/login",
     githubUrl:
       "https://github.com/singgihseptiann/kelompok1-platinum-customer-page",
   },
-
   {
+    id: "ssayomart",
     title: "Ssayomart",
     description:
-      "Ssayomart is an e-commerce project, which was my first professional project as a Frontend Developer. I worked on an existing project, focusing on improving its responsiveness, particularly ensuring a seamless mobile experience for users. If you're viewing it on a large screen and want to switch to mobile view, please refresh the browser for a better experience.",
+      "E-commerce project focused on enhancing mobile responsiveness.",
     img: Ssayomart,
     techStack: techStack2,
     portfolioUrl: "https://apps.ssayomart.com/",
   },
-
-  // Add more projects as needed
 ];

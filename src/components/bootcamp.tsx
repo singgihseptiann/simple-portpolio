@@ -1,4 +1,4 @@
-// src/components/Bootcamp.tsx
+
 import React from "react";
 
 interface BootcampProps {

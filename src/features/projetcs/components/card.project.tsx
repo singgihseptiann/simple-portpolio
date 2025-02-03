@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 interface TechStackIcon {
   name?: string;
@@ -8,6 +9,7 @@ interface TechStackIcon {
 }
 
 interface CardProjectProps {
+  id: string; // Tambahkan ID sebagai parameter untuk navigasi
   title: string;
   description: string;
   img: string;
@@ -17,6 +19,7 @@ interface CardProjectProps {
 }
 
 const CardProject: React.FC<CardProjectProps> = ({
+  id,
   title,
   description,
   techStack,
@@ -25,19 +28,9 @@ const CardProject: React.FC<CardProjectProps> = ({
   githubUrl,
 }) => {
   return (
-    <div className="flex h-full flex-col rounded-lg border bg-white transition-all duration-500 ease-out hover:bg-gray-100 hover:shadow-lg dark:border-gray-800 dark:bg-transparent dark:hover:bg-gray-900">
-      {/* Header section with fixed height */}
-      <div className="flex h-64 flex-col p-4 md:h-72">
-        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
-          {title}
-        </h2>
-        <p className="mt-2 line-clamp-3 flex-grow text-sm text-gray-600 dark:text-gray-400">
-          {description}
-        </p>
-      </div>
-
-      {/* Image section with fixed height */}
-      <div className="h-48 p-4">
+    <div className="flex h-full flex-col rounded-lg border bg-white transition-all duration-500 ease-out hover:bg-gray-100 hover:shadow-lg dark:border-gray-800 dark:bg-transparent dark:hover:bg-gray-900 md:flex-row">
+      {/* Image section */}
+      <div className="h-48 p-4 md:h-auto md:w-1/2 md:p-4">
         <img
           className="h-full w-full rounded-md object-cover"
           src={img}
@@ -46,28 +39,39 @@ const CardProject: React.FC<CardProjectProps> = ({
         />
       </div>
 
-      {/* Tech stack section */}
-      <div className="mt-auto p-4">
-        <div className="flex flex-wrap items-center gap-2">
-          {techStack.map((tech, index) => (
-            <span
-              key={index}
-              className="flex items-center rounded-full py-1 text-sm"
-            >
-              {tech.icon}
-              {tech.name && (
-                <span className="ml-1 text-gray-600 dark:text-gray-400">
-                  {tech.name}
-                </span>
-              )}
-            </span>
-          ))}
+      {/* Content section */}
+      <div className="flex flex-1 flex-col p-4 md:w-1/2">
+        {/* Header section */}
+        <div className="flex flex-col">
+          <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+            {title}
+          </h2>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            {description}
+          </p>
         </div>
-      </div>
 
-      {/* Links section */}
-      {(portfolioUrl || githubUrl) && (
-        <div className="flex items-center justify-between p-4">
+        {/* Tech stack section */}
+        <div className="mt-4">
+          <div className="flex flex-wrap items-center gap-2">
+            {techStack.map((tech, index) => (
+              <span
+                key={index}
+                className="flex items-center rounded-full py-1 text-sm"
+              >
+                {tech.icon}
+                {tech.name && (
+                  <span className="ml-1 text-gray-600 dark:text-gray-400">
+                    {tech.name}
+                  </span>
+                )}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Links section */}
+        <div className="mt-auto flex items-center justify-between pt-4">
           {portfolioUrl && (
             <a
               href={portfolioUrl}
@@ -90,7 +94,15 @@ const CardProject: React.FC<CardProjectProps> = ({
             </a>
           )}
         </div>
-      )}
+
+        {/* Button untuk Navigasi ke Halaman Detail */}
+        <Link
+          to={`/projects/${id}`} // Navigasi ke detail project berdasarkan id
+          className="mt-4 inline-block rounded-md bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-300"
+        >
+          View Details
+        </Link>
+      </div>
     </div>
   );
 };
