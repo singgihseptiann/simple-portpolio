@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <div>
       <Navbar />
-      <main className="container mx-auto mt-5 max-w-6xl p-4 md:mt-20">
+      <main className="container mx-auto mt-5 max-w-6xl overflow-hidden p-4">
         <Outlet />
       </main>
       <Footer />
