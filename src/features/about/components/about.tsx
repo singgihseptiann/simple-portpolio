@@ -49,7 +49,14 @@ const About: React.FC = () => {
       </div>
 
       {/* Efek burst */}
-      <div className="absolute -right-4 -top-4 h-12 w-12 rotate-45 transform rounded-full bg-yellow-400 shadow-[3px_3px_0px_black]"></div>
+      <div className="absolute -right-4 -top-0 rotate-12 transform rounded-full bg-yellow-400 p-1 shadow-[3px_3px_0px_black]">
+        <span
+          className="right-4 top-4 text-3xl font-bold text-black"
+          style={{ textShadow: "2px 2px 0px yellow" }}
+        >
+          YOHOO!
+        </span>
+      </div>
     </div>
   );
 };

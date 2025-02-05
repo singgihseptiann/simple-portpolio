@@ -14,11 +14,14 @@ const ProjectsPage: React.FC = () => {
     <div className="mt-10">
       <TitleSection title="Projects" />
       {isProjectsRoute && (
-        <p className="mb-2 mt-6 font-mono text-xl text-zinc-600 dark:text-zinc-300">
-          Showcase of my works on web development.
+        <p className="mb-5 mt-6 rotate-2 bg-yellow-400 px-2 font-mono text-xl text-black shadow-[3px_3px_0px_black] dark:text-zinc-300 xl:mb-7">
+          <span className="text-base font-bold text-black">
+            {" "}
+            Showcase of my works on web development.
+          </span>
         </p>
       )}
-      <div className="grid grid-cols-1 gap-4">
+      <div className="md:10 grid grid-cols-1 gap-8">
         {(isProjectsRoute ? projects : projects.slice(0, 3)).map(
           (project, index) => (
             <CardProject
