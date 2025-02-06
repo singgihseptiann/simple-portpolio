@@ -1,5 +1,5 @@
-import { Sun, SunMoon } from "lucide-react";
 import { useTheme } from "../context/theme.context";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function Theme() {
   const { isDark, toggleTheme } = useTheme();
@@ -7,9 +7,10 @@ export default function Theme() {
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+      className="rounded-full bg-yellow-400 p-2 text-2xl text-black shadow-[4px_4px_0px_black] transition-all duration-200 hover:scale-105 hover:bg-yellow-500 hover:shadow-[6px_6px_0px_black]"
+      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      {isDark ? <Sun className="text-yellow-400" /> : <SunMoon />}
+      {isDark ? <FaSun /> : <FaMoon />}
     </button>
   );
 }
